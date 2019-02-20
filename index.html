@@ -3,13 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>Crystals Collector!</title>
 
   <!-- Link to the jQuery Library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
   <!-- AND/OR YOUR OWN CSS -->
   <link rel="stylesheet" href="assets/css/reset.css">
@@ -19,7 +20,49 @@
 </head>
 
 <body>
-
+  <div class="container">
+    <div class="row head">
+      <h1 id="header">Crystals Collector!</h1>
+    </div>
+    <!-- instruction -->
+    <div id="par">
+      <p>
+        There will be four crystals displayed as buttons on the page.
+        The player will be shown a random number at the start of the game.
+        When the player clicks on a crystal, it will add a specific amount of points to the player's total
+        score.
+      </p>
+      <p>
+        When they do click one, update the player's score counter.
+        The player wins if their total score matches the random number from the beginning of the game.
+        The player loses if their score goes above the random number.
+        The game restarts whenever the player wins or loses.
+      </p>
+      <p>
+        When the game begins again, the player should see a new random number. Also, all the crystals will have
+        four new hidden values.
+      </p>
+    </div>
+    <!-- image of 4 crystals -->
+    <div class="buttons">
+      <img class="image" id="image1" alt="crystal1" src="assets/images/crystal1.jpg">
+      <img class="image" id="image2" alt="crystal2" src="assets/images/crystal2.jpg">
+      <img class="image" id="image3" alt="crystal3" src="assets/images/crystal3.jpg">
+      <img class="image" id="image4" alt="crystal4" src="assets/images/crystal4.jpg">
+    </div>
+    <!-- message show -->
+    <div class="box">
+      <button class="btn bg-warning attr text-danger font-weight-bold" id="getnumber" type="button">New
+        Game</button>
+      <h3 class="attr " id="random">Number to guess is: <span id="numbertoguess"></span></h3>
+      <div class="mess attr">
+        <p>Your total score is: <span id="total"></span></p>
+        <div id="message"></div>
+        <p>Win: <span id="win"></span></p>
+        <p>Loss: <span id="loss"></span></p>
+      </div>
+    </div>
+  </div>
   <!-- Link to your JavaScript -->
   <script type="text/javascript" src="assets/javascript/game.js"></script>
 

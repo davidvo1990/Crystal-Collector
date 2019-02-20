@@ -1,0 +1,93 @@
+	/* default */
+    body {
+        /* background-image: url("../images/wall.jpg"); */
+        /* background: purple; */
+        color: black;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        font-family: Georgia, Times, "Times New Roman", serif;
+        font-size: 14px;
+        line-height: 35px;
+    }
+
+    .container {
+        background-image: url("../images/wall.jpg");
+    }
+
+    h1 {
+        font-size: 30px;
+        line-height: 50px;
+        font-weight: bold;
+    }
+
+    #header {
+        color: white;
+        background: red;
+        padding: 15px;
+    }
+
+    /* crystal */
+    .image {
+        width: 120px;
+        height: auto;
+        margin: 10px 10px 0 0;
+
+    }
+
+    .head {
+        padding: 10px;
+    }
+
+    /* show pargaraph */
+    #par {
+        background: cyan;
+        font-weight: bold;
+        color: green;
+    }
+
+    p {
+        padding: 5px;
+    }
+
+    /* randrom number */
+    #random {
+        background: green;
+        color: rebeccapurple;
+        padding: 10px;
+        width: 400px;
+    }
+
+    /* show message win or lost */
+    #message {
+        color: red;
+    }
+
+    .mess {
+        background: darkblue;
+        color: yellow;
+        font-weight: bold;
+        width: 300px;
+    }
+
+    h3 {
+        font-size: 19px;
+        line-height: 35px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+    }
+
+    /* total addup when click crystal */
+    #total {
+        font-weight: bold;
+        color: white;
+    }
+
+    #numbertoguess {
+        color: cyan;
+    }
+
+    .attr {
+        margin: 2px;
+    }
